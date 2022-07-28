@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;500&display=swap');
+
+:root{
+    --bg:hsl(0, 0%, 100%);
+    --font: hsl(0, 0%, 0%);
+    --btn: hsl(214, 99%, 47%);
+
+    --navbar: hsl(0, 0%, 0%);
+    --aside-navbar: hsl(0, 0%, 100%);
+    --navbar-btn-hover: hsl(49, 100%, 50%);
+
+    --footer: hsl(194, 100%, 8%);
+
+    --footer-font: hsl(0, 0%, 92%);
+
+    --cinza: hsl(0, 0%, 44%);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    color: transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--btn);
+    border-radius: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    overflow-x:hidden;
+
+    
+}
+
+
+
+html{
+   /* scroll-behavior: smooth; */
+   overflow-x:hidden;
+
+}
+
+/* navbar  */
+
+.header .navbar{
+    position: relative;
+    margin: 0;
+}
+
+.header .navbar img{
+    width: 12rem;
+    height: 6.875rem;
+    top: 1rem; 
+    padding-right: 1.1rem;
+}
+
+/* escolha  */
+
+.criar-conta h3{
+
+    font-family: 'Poppins', sans-serif;
+
+    position: absolute;
+
+    color: var(--btn);
+
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 5rem;
+    display: flex;
+
+    margin-top: 8rem;
+
+    margin-left: 26rem;
+}
+
+/* form input  */
+
+.criar-conta form{
+
+    position: absolute;
+    width: 100%;
+
+}
+
+
+
+/* .criar-conta #info-colaborador input{
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+    margin-top: 8rem;
+} */
+
+.criar-conta p{
+
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+
+    position: absolute;
+    display: flex;
+
+    margin-left: 20.5rem;
+
+    margin-top: 14rem;
+
+}
+
+.criar-conta pre{
+    font-weight: 500;
+    font-size: .800rem;
+
+    margin-left: 27rem;
+    margin-top: .800rem;
+
+    position: absolute;
+    
+}
+
+
+
+.criar-conta .input-text{
+    margin-top: 2rem;
+}
+
+#info-colaborador{
+
+    margin-top: 8rem
+
+}
+
+#nome-completo{
+    margin-top: 6rem;
+    
+}
+
+#nome{
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+    margin-top: 8rem;
+}
+
+#email{
+    margin-top: 4rem;
+
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+}
+
+#senha{
+    margin-top: 4rem;
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+}
+
+#confirmar-senha{
+    margin-top: 4rem;
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+}
+
+#cpf{
+    margin-top: 4rem;
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+}
+
+#crp{
+    margin-top: 4rem;
+    width: 25%;
+    padding: 1rem 1rem;
+    border: 1px solid var(--btn);
+    border-radius: 5px;
+
+    display: flex;
+
+    margin-left: 20.2rem;
+
+}
+
+/* checkboxes  */
+
+.checkbox h4{
+    font-family: 'Poppins', sans-serif;
+
+    position: absolute;
+
+    color: var(--btn);
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 5rem;
+    display: flex;
+
+    margin-top: 2rem;
+
+    margin-left: 20.2rem;
+}
+
+#psicanalise{
+    margin-top: 7rem;
+    margin-left: 20.2rem;
+
+}
+
+#tcc{
+    margin-top: 1rem;
+    margin-left: 20.2rem;
+}
+
+#gestalt{
+    margin-top: 1rem;
+    margin-left: 20.2rem;
+}
+
+#behaviorismo{
+    margin-top: 1rem;
+    margin-left: 20.2rem;
+}
+
+#analitica{
+    margin-top: 1rem;
+    margin-left: 20.2rem;
+}
+
+#humanista{
+    margin-top: 1rem;
+    margin-left: 20.2rem;
+    
+}
+
+
+
+.criar-conta .btn{
+    margin-top: 1rem;
+    margin-left: 24rem;
+    margin-top: 3.2rem;
+
+    display: inline-block;
+    padding: 1rem 3rem;
+    
+    border: 0.125rem solid;
+    border-radius: .500rem;
+
+    color: var(--aside-navbar);
+    background: var(--btn);
+    cursor: pointer;
+
+    line-height: 1rem;
+} 
+
+.btn:hover{
+    opacity: 75%;
+    color: var(--aside-navbar);
+} 
+
+#tem-login{
+
+    margin-top: 7rem;
+    margin-left: 24.4rem;
+    color: var(--cinza);
+}
+
+
+.criar-conta .aside img{
+
+    position: relative;
+    display: flex;
+    z-index: -1;
+
+    float: top right;
+    margin-left: 46.8rem;
+
+    margin-right: 0;
+    width: 38rem;
+
+    margin-top: -8rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+/* footer  */
+
+.footer{
+    position: absolute;
+    width: 1420px;
+    height: 200px;
+    left: 0px;
+    margin: 0;
+    background-color: var(--footer);
+}
+
+.footer .content .line{
+    position: absolute;
+
+    display: flex;
+    padding-left: 8rem;
+
+    margin-bottom: 0;
+    margin-top:1.5rem;
+}
+
+
+
+.footer .topico{
+
+    position: absolute;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    margin-left: 25rem;
+
+    margin-top: 5rem;
+
+}
+
+.footer .topico a{
+    padding: 1rem;
+
+    color: var(--footer-font);
+}
+
+.footer .topico a:hover{
+
+    color: var(--navbar-btn-hover);
+}
+
+.footer img{
+
+    position: absolute;
+
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+
+}
+
+.footer svg{
+    margin-top: 3.5rem;
+}
+
+.footer svg:hover path{
+    fill: var(--navbar-btn-hover);
+}
+
+.footer .icones{
+    display: flex;
+}
+
+.footer .icones a{
+
+    margin: 1rem;
+
+    position: absolute;
+
+    margin-top: 2.2rem;
+
+}
+
+#linkedin-icon{
+
+    margin-left: 64rem;
+}
+
+/* #linkedin-icon:hover {
+    fill: var(--navbar-btn-hover);
+} */
+
+#insta-icon{
+    /* display: flex; */
+
+    margin-left: 68rem;
+
+}
+
+#github-icon{
+
+    /* display: flex; */
+
+    margin-left: 72rem;
+
+}
+
+#email-link{
+    /* padding-bottom: -8rem; */
+
+    margin-left: 64.8rem;
+
+    margin-top: 8rem;
+
+    color: var(--footer-font);
+}
+
+#email-link:hover{
+    color: var(--navbar-btn-hover);
+}
+
+#maozinha-foot{
+
+    margin-left: 75rem;
+
+    margin-top: 3.4rem;
+
+}
+
+.copyright{
+    color: var(--cinza);
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+
+    margin-left: -8rem;
+}

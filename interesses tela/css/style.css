@@ -1,0 +1,466 @@
+/* font poppins  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;500&display=swap');
+
+/* fonte ubuntu  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root{
+    --bg:hsl(0, 0%, 100%);
+    --font: hsl(0, 0%, 0%);
+    --btn: hsl(214, 99%, 47%);
+
+    --navbar: hsl(0, 0%, 0%);
+    --aside-navbar: hsl(0, 0%, 100%);
+    --navbar-btn-hover: hsl(49, 100%, 50%);
+
+    --footer: hsl(194, 100%, 8%);
+
+    --footer-font: hsl(0, 0%, 92%);
+
+    --cinza: hsl(0, 0%, 44%);
+
+    --background: hsl(0, 0%, 90%);
+
+    --border-profile: hsl(0, 0%, 87%);
+
+    --descp-profile: hsl(0, 0%, 43%);
+
+    --heart-hover: hsl(0, 100%, 46%);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+
+    /* background-color: var(--background); */
+
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    color: transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--btn);
+    border-radius: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    overflow-x:hidden;
+
+    
+}
+
+html{
+   /* scroll-behavior: smooth; */
+   overflow-x:hidden;
+
+}
+
+
+/* navbar  */
+
+.header .navbar{
+    position: relative;
+    margin: none;
+}
+
+.header .upside{
+    z-index: -1;
+    margin-bottom: 0rem;
+
+}
+#logo-nav{
+    width: 9rem;
+    height: 6rem;
+    top: -7.5rem; 
+
+    position: relative;
+
+    background-color: transparent;
+    margin-bottom: none;
+
+}
+
+.titulo h3{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+
+    margin-top: -6.5rem;
+    margin-left: 3rem;
+    
+}
+
+.titulo .descpt pre{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+    margin-left: 3rem;
+}
+
+.interesses .opcoes-1{
+    display: flex;
+    gap: 1.5rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.interesses .opcoes-2{
+    display: flex;
+    gap: 2rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0.999rem;
+}
+
+.interesses .opcoes-3{
+    display: flex;
+    gap: 2.2rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0.999rem;
+}
+
+.interesses .opcoes-4{
+    display: flex;
+    gap: 2.2rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0.999rem;
+}
+
+
+.interesses .opcoes-5{
+    display: flex;
+    gap: 2.2rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0.999rem;
+}
+
+
+.interesses .opcoes-6{
+    display: flex;
+    gap: 2.2rem;
+
+    margin-top: 3rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 0.999rem;
+}
+
+
+#jiujitsu,
+#pagode, 
+#hiperatividade, 
+#churrasco,
+#sorvete,
+#cha,
+#memes,
+#moda,
+#corrida-bicicleta,
+#intercambio-l,
+#futsal,
+#patinacao-gelo,
+#esqui,
+#lol,
+#disney,
+#tenis,
+#cafe,
+#acai,
+#acai,
+#heavymetal,
+#nba,
+#astrologia,
+#pesca,
+#funk,
+#livros,
+#esgrima,
+#cozinhar,
+#skate,
+#podcast,
+#baladas,
+#carros,
+#filmes,
+#series,
+#manga,
+#rock,
+#boxe,
+#meditacao,
+#gameplays,
+#surfe,
+#mochilao,
+#leitura,
+#paraquedismo{
+
+    color: var(--cinza);
+
+    border: 0.063rem solid;
+    border-color: var(--cinza);
+    border-radius: 2rem;
+    background-color: transparent;
+    padding: 0.50rem 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#jiujitsu.active,
+#pagode.active, 
+#hiperatividade.active, 
+#churrasco.active,
+#sorvete.active,
+#cha.active,
+#memes.active,
+#moda.active,
+#corrida-bicicleta.active,
+#intercambio-l.active,
+#futsal.active,
+#patinacao-gelo.active,
+#esqui.active,
+#lol.active,
+#disney.active,
+#tenis.active,
+#cafe.active,
+#acai.active,
+#heavymetal.active,
+#nba.active,
+#astrologia.active,
+#pesca.active,
+#funk.active,
+#livros.active,
+#esgrima.active,
+#cozinhar.active,
+#skate.active,
+#podcast.active,
+#baladas.active,
+#carros.active,
+#filmes.active,
+#series.active,
+#manga.active,
+#rock.active,
+#boxe.active,
+#meditacao.active,
+#gameplays.active,
+#surfe.active,
+#mochilao.active,
+#leitura.active,
+#paraquedismo.active{
+
+    color: var(--btn);
+
+    border: 0.063rem solid;
+    border-color: var(--btn);
+    border-radius: 2rem;
+    background-color: transparent;
+    padding: 0.50rem 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+ .continuar-btn button{
+
+
+    font-size: 1rem;
+
+    margin-top: 3rem;
+    margin-left: 33rem;
+    display: flex;
+    padding: 1.2rem 6rem;
+    
+    border: 0.125rem solid;
+    border-radius: .500rem;
+
+    color: var(--aside-navbar);
+    background: var(--btn);
+    cursor: pointer;
+
+    line-height: 0.500rem;
+
+}
+
+.continuar-btn button:hover{
+    opacity: 80%;
+}
+
+
+
+.suporte button:hover{
+
+    opacity: 80%;
+    
+}
+
+
+/* footer  */
+
+.footer{
+    margin-top: 5rem;
+    width: 1420px;
+    height: 200px;
+    background-color: var(--footer);
+}
+
+.footer .content .line{
+    position: absolute;
+
+    display: flex;
+    padding-left: 8rem;
+
+    margin-bottom: 0;
+    margin-top:1.5rem;
+}
+
+
+
+.footer .topico{
+
+    position: absolute;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    margin-left: 25rem;
+
+    margin-top: 5rem;
+
+}
+
+.footer .topico a{
+    padding: 1rem;
+
+    color: var(--footer-font);
+}
+
+.footer .topico a:hover{
+
+    color: var(--navbar-btn-hover);
+}
+
+.footer img{
+
+    position: absolute;
+
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+
+}
+
+.footer svg{
+    margin-top: 3.5rem;
+}
+
+.footer svg:hover path{
+    fill: var(--navbar-btn-hover);
+}
+
+.footer .icones{
+    display: flex;
+}
+
+.footer .icones a{
+
+    margin: 1rem;
+
+    position: absolute;
+
+    margin-top: 2.2rem;
+
+}
+
+#linkedin-icon{
+
+    margin-left: 64rem;
+}
+
+/* #linkedin-icon:hover {
+    fill: var(--navbar-btn-hover);
+} */
+
+#insta-icon{
+    /* display: flex; */
+
+    margin-left: 68rem;
+
+}
+
+#github-icon{
+
+    /* display: flex; */
+
+    margin-left: 72rem;
+
+}
+
+#email-link{
+    /* padding-bottom: -8rem; */
+
+    margin-left: 64.8rem;
+
+    margin-top: 8rem;
+
+    color: var(--footer-font);
+}
+
+#email-link:hover{
+    color: var(--navbar-btn-hover);
+}
+
+#maozinha-foot{
+
+    margin-left: 75rem;
+
+    margin-top: 3.4rem;
+
+}
+
+.copyright{
+    color: var(--cinza);
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+
+    margin-left: -8rem;
+}

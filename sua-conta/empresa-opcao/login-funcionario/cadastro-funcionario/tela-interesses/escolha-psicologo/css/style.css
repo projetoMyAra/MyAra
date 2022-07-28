@@ -1,0 +1,604 @@
+/* font poppins  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;500&display=swap');
+
+/* fonte ubuntu  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root{
+    --bg:hsl(0, 0%, 100%);
+    --font: hsl(0, 0%, 0%);
+    --btn: hsl(214, 99%, 47%);
+
+    --navbar: hsl(0, 0%, 0%);
+    --aside-navbar: hsl(0, 0%, 100%);
+    --navbar-btn-hover: hsl(49, 100%, 50%);
+
+    --footer: hsl(194, 100%, 8%);
+
+    --footer-font: hsl(0, 0%, 92%);
+
+    --cinza: hsl(0, 0%, 44%);
+
+    --background: hsl(0, 0%, 90%);
+
+    --border-profile: hsl(0, 0%, 87%);
+
+    --descp-profile: hsl(0, 0%, 43%);
+
+    --heart-hover: hsl(0, 100%, 46%);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: .2s linear;
+
+    /* background-color: var(--background); */
+
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    color: transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--btn);
+    border-radius: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+
+
+html{
+   /* scroll-behavior: smooth; */
+   overflow-x:hidden;
+
+}
+
+/* navbar  */
+
+.header .navbar{
+    position: relative;
+    margin: 0;
+}
+
+.header .upside{
+    z-index: -1;
+    margin-bottom: 0;
+
+}
+#logo-nav{
+    width: 9rem;
+    height: 6rem;
+    top: -7.5rem; 
+
+    position: relative;
+
+    background-color: transparent;
+    margin-bottom: 0;
+
+}
+
+nav .search{
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -10rem;
+}
+nav input{
+    background-color: transparent;
+
+    border: 1px solid var(--cinza);
+    border-radius: 1rem;
+
+    /* width: 15rem; */
+    padding: .450rem 3rem;
+    font-size: .800rem;
+    margin-bottom: 0;
+
+}
+
+#busca::placeholder{
+    margin-left: 1rem;
+}
+
+nav button{
+    background-color: transparent;
+
+    width: 1rem;
+
+}
+
+nav button i{
+    color: var(--cinza);
+    width: 1rem;
+    margin-left: -30rem;
+
+
+    cursor: pointer;
+}
+
+/* escolha seu psicologo  */
+
+.encontre-psicologo .titulo h3{
+
+    font-family: 'Ubuntu', sans-serif;
+
+
+    position: absolute;
+    color: var(--font);
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+
+    margin-top: -6rem;
+    margin-left: 6em;
+    margin-bottom: 0;
+}
+
+/* botoes de visualizacao  */
+
+
+.encontre-psicologo .button button{
+    display: inline-block;
+    position: absolute;
+
+    margin-top: -3rem;
+}
+
+#mostrar-todos{
+    color: var(--cinza);
+
+    border: 0.063rem solid;
+    border-color: var(--cinza);
+    border-radius: 2rem;
+    background-color: transparent;
+
+    padding: 0.50rem 1.5rem;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    margin-left: 13rem;
+    
+    
+}
+
+#mostrar-todos:hover{
+    color:var(--font);
+}
+
+#favoritos{
+    color: var(--cinza);
+
+    border: 0.063rem solid;
+    border-color: var(--cinza);
+    border-radius: 2rem;
+    background-color: transparent;
+
+    padding: 0.50rem 1.5rem;
+
+    font-weight: 500;
+    
+    cursor: pointer;
+
+    margin-left: 24rem;
+
+}
+
+#favoritos:hover{
+    color:var(--font);
+}
+
+/* perfis de psicos  */
+
+.perfis-psico .perfil{
+    margin-left: 7rem;
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    position: absolute;
+
+    display: inline-block;
+
+}
+
+.perfis-psico .perfil:hover{
+    border-color: var(--btn);
+}
+
+
+
+.perfis-psico img{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    width: 5.944rem;
+    height: 5.944rem;
+
+}
+
+#like1,
+#like2,
+#like3,
+#like4,
+#like5,
+#like6,
+#like7,
+#like8{
+
+    margin-left: 28.9rem;
+    margin-top: -8.9rem;
+    position: absolute;
+
+    cursor: pointer;
+
+    fill: rgb(255, 255, 255) ;
+    stroke: hsl(0, 0%, 51%);
+    stroke-width: 2.22222;
+    transition: 1ms;
+}
+
+#like1.active,
+#like2.active,
+#like3.active,
+#like4.active,
+#like5.active,
+#like6.active,
+#like7.active,
+#like8.active{
+
+    fill: red ;
+    stroke: red;
+
+}
+
+.perfis-psico .nome h3{
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.389rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--font);
+
+    margin-left: 8.5rem;
+    margin-top: -5em;
+}
+
+.perfis-psico .desc{
+
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0.60rem;
+    margin-left: 8.5rem;
+    margin-right: 1rem;
+    font-size: 0.764rem;
+
+    color: var(--descp-profile);
+}
+
+.perfis-psico a{
+
+    margin-top: -0.20rem;
+    margin-left: 25.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+    
+    border: 0.125rem solid;
+    border-radius: .500rem;
+
+    color: var(--aside-navbar);
+    background: var(--btn);
+    cursor: pointer;
+
+    line-height: 0.500rem;
+
+}
+
+.perfis-psico button:hover{
+    opacity: 80%;
+}
+
+#perfil1{
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+
+}
+
+#perfil1:hover{
+    border-color: var(--btn);
+}
+
+#perfil2{
+
+    margin-top: 18rem;
+
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil2:hover{
+    border-color: var(--btn);
+}
+
+#perfil3{
+
+    margin-top: 33rem;
+
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil3:hover{
+    border-color: var(--btn);
+}
+#perfil4{
+
+    margin-top: 48rem;
+
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil4:hover{
+    border-color: var(--btn);
+}
+
+#perfil5{
+
+    margin-left: 46rem;
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil5:hover{
+    border-color: var(--btn);
+}
+
+#perfil6{
+    margin-left: 46rem;
+    margin-top: 18rem;
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil6:hover{
+    border-color: var(--btn);
+}
+
+#perfil7{
+    margin-left: 46rem;
+    margin-top: 33rem;
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+}
+
+#perfil7:hover{
+    border-color: var(--btn);
+}
+
+#perfil8{
+    margin-left: 46rem;
+    margin-top: 48rem;
+    display: inline-block;
+
+    border: 0.063rem solid var(--border-profile);
+    border-radius: 1rem;
+    box-shadow: -7px 6px 6px var(--border-profile);
+
+    opacity: 60%;
+}
+
+#perfil8:hover{
+    border-color: var(--btn);
+}
+
+/* suporte button  */
+
+.suporte button{
+    
+    margin-top: 65rem;
+    font-size: 1rem;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    display: inline-block;
+    padding: 0.80rem 1rem;
+    
+    border: 0.125rem solid;
+    border-radius: 3rem;
+
+    color: var(--aside-navbar);
+    background: var(--btn);
+    cursor: pointer;
+
+    line-height: 0.500rem;
+
+}
+
+.suporte button:hover{
+
+    opacity: 80%;
+    
+}
+
+
+/* footer  */
+
+.footer{
+    margin-top: 5rem;
+    width: 1420px;
+    height: 200px;
+    background-color: var(--footer);
+}
+
+.footer .content .line{
+    position: absolute;
+
+    display: flex;
+    padding-left: 8rem;
+
+    margin-bottom: 0;
+    margin-top:1.5rem;
+}
+
+
+
+.footer .topico{
+
+    position: absolute;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+    margin-left: 25rem;
+
+    margin-top: 5rem;
+
+}
+
+.footer .topico a{
+    padding: 1rem;
+
+    color: var(--footer-font);
+}
+
+.footer .topico a:hover{
+
+    color: var(--navbar-btn-hover);
+}
+
+.footer img{
+
+    position: absolute;
+
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+
+}
+
+.footer svg{
+    margin-top: 3.5rem;
+}
+
+.footer svg:hover path{
+    fill: var(--navbar-btn-hover);
+}
+
+.footer .icones{
+    display: flex;
+}
+
+.footer .icones a{
+
+    margin: 1rem;
+
+    position: absolute;
+
+    margin-top: 2.2rem;
+
+}
+
+#linkedin-icon{
+
+    margin-left: 64rem;
+}
+
+/* #linkedin-icon:hover {
+    fill: var(--navbar-btn-hover);
+} */
+
+#insta-icon{
+    /* display: flex; */
+
+    margin-left: 68rem;
+
+}
+
+#github-icon{
+
+    /* display: flex; */
+
+    margin-left: 72rem;
+
+}
+
+#email-link{
+    /* padding-bottom: -8rem; */
+
+    margin-left: 64.8rem;
+
+    margin-top: 8rem;
+
+    color: var(--footer-font);
+}
+
+#email-link:hover{
+    color: var(--navbar-btn-hover);
+}
+
+#maozinha-foot{
+
+    margin-left: 75rem;
+
+    margin-top: 3.4rem;
+
+}
+
+.copyright{
+    color: var(--cinza);
+    margin-top: 10rem;
+    align-items: center;
+    text-align: center;
+
+    margin-left: -8rem;
+}
